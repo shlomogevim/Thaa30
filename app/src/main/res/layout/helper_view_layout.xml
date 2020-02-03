@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tvAnimatinKind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Talk parameter"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:background="@color/black"
+        android:gravity="center"
+        android:text="10"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/style_ListView"
+        android:layout_width="60dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:elevation="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/down_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upper_layout"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ListView
+        android:id="@+id/action_ListView"
+        android:layout_width="60dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:elevation="30dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/down_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upper_layout">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/currentParameterTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:text="Current parameter"
+        android:textColor="@android:color/white"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:id="@+id/upper_layout"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvPage"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/textRevBtn"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Read T."
+            android:textSize="10sp" />
+
+
+        <Button
+            android:id="@+id/reSizeTextBtn"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Mini T."
+            android:textSize="10sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/newPageBtn"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Page"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/displayAgainBtn"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Display"
+            android:textSize="10sp"/>
+        <Button
+            android:id="@+id/toShowModeBtn"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Show"
+            android:textSize="10sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/down_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/previousButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Prev"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/lastTalker_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Last" />
+
+        <Button
+            android:id="@+id/plusAndMinusBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="+"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Save"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            android:text="Next"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/pageNumEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="100dp"
+        android:ems="10"
+        android:hint="Enter New Page"
+        android:inputType="numberSigned"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="36sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/para_ListView"
+        android:layout_width="110dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/style_ListView"
+        app:layout_constraintStart_toEndOf="@+id/style_ListView"
+        app:layout_constraintTop_toTopOf="@+id/style_ListView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ListView
+        android:id="@+id/ttPara_listView"
+        android:layout_width="110dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/style_ListView"
+        app:layout_constraintEnd_toStartOf="@+id/action_ListView"
+        app:layout_constraintTop_toTopOf="@+id/style_ListView" />
+
+    <EditText
+        android:id="@+id/colorNam_ET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="#FFFFFF"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
