@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/pretext/te.txt" charset="windows-1255" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/pretext/te10.txt" charset="windows-1255" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/pretext/te11.txt" charset="windows-1255" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/pretext/te12.txt" charset="windows-1255" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/pretext/te13.txt" charset="windows-1255" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/pretext/te14.txt" charset="windows-1255" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/style/style11.txt" charset="windows-1255" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/text/text.txt" charset="windows-1255" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/text/text10.txt" charset="windows-1255" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/text/text100.txt" charset="windows-1255" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/text/text11.txt" charset="windows-1255" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/text/text12t.txt" charset="windows-1255" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/text/text20.txt" charset="windows-1255" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/text/text8.txt" charset="windows-1255" />
+  </component>
+</project>

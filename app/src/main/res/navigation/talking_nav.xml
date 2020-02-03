@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/listFragment"
-        android:name="com.example.thaa30.ListFragment"
+        android:name="com.example.thaa30.view.ListTalking"
         android:label="fragment_list"
         tools:layout="@layout/talking_list" >
         <action
@@ -16,11 +16,14 @@
     </fragment>
     <fragment
         android:id="@+id/detailsFragment"
-        android:name="com.example.thaa30.DetailsFragment"
+        android:name="com.example.thaa30.view.DetailsTalking"
         android:label="fragment_details"
         tools:layout="@layout/talking_details" >
         <action
             android:id="@+id/actionToList"
             app:destination="@id/listFragment" />
+        <argument
+            android:name="currentConvers"
+            app:argType="com.example.thaa30.util.Convers" />
     </fragment>
 </navigation>

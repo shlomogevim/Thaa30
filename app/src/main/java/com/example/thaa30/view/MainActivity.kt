@@ -1,7 +1,8 @@
-package com.example.thaa30
+package com.example.thaa30.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.thaa30.R
 
 class MainActivity : AppCompatActivity() {
 
